@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    width: 30%; /* Adjust the width as needed */
+    position: relative;
+}
+
+.section h2 {
+    background-color: #ff5733; /* Choose your color */
+    color: white; /* Adjust text color for visibility */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .section {
+        width: 48%; /* Adjust the width for tablet view */
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Full width for mobile view */
+        float: none;
+    }
+}
